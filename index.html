@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <title>Instagram Feed Post</title>
+</head>
+<body>
+  <!-- nav bar start-->
+  <nav class="navbar navbar-light bg-light py-3">
+    <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between">
+            <div>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <h4 class="d-inline-block fs-5">Instagram</h4>
+            </div>
+            <div class="d-flex align-right justify-content-end">
+                <!-- Buttons -->
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  <!-- nav bar end -->
+
+   <!-- Button post -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Caption:</h6>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"
+                        id="floatingTextarea2"></textarea>
+                    <div class="row p-2">
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- button post end -->
+
+     <!-- grid change -->
+     <div class="container-fluid p-2">
+      <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true"><i
+                      class="fa-solid fa-table-cells"></i></a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+          </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+      <!-- grid change end -->
+
+      <!-- Gallery 3 photo -->
+      <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row">
+          <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1728218948405-d749e7d1851e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4N3x8fGVufDB8fHx8fA%3D%3D" alt="img1" class="img-fluid"></div>
+          <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1728322901117-f19559ccc596?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Nnx8fGVufDB8fHx8fA%3D%3D" alt="img2" class="img-fluid"></div>
+          <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1728124190953-b1cac24cedfa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4OXx8fGVufDB8fHx8fA%3D%3D" alt="img3" class="img-fluid"></div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1727206407687-81a7448e7c7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="img4" class="img-fluid"></div>
+            <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1725808796896-6f2ac628670c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" alt="img5" class="img-fluid"></div>
+            <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1724864863815-1469c8b74711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="img6" class="img-fluid"></div>
+        </div>
+          <div class="row">
+            <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1726611993654-557bfdde474f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D" alt="img7" class="img-fluid"></div>
+            <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1698505302992-da6c434bd9d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NXx8fGVufDB8fHx8fA%3D%3D" alt="img8" class="img-fluid"></div>
+            <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1727869574099-3ee3c4185e31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" alt="img9" class="img-fluid"></div>
+          </div>
+      </div>
+      <!-- Gallery 3 photo end -->
+
+      <!-- Gallery 1 photo -->
+      <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="row my-4">
+            <div class="col-6 mx-auto border p-0">
+                <div class="d-flex p-2">
+                    <div class="w-100 fs-4">Abstract head photo</div>
+                    <div class="align-bottom">01/09</div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1728218948405-d749e7d1851e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4N3x8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img1"/>
+                        <div class="p-2">
+                            <strong>204 Likes</strong>
+                            <p>Abstract head photo</p>
+                        </div>
+            </div>
+        </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">Snake Road</div>
+                            <div class="align-bottom">02/09</div>
+                        </div>
+                        <img src="https://plus.unsplash.com/premium_photo-1728322901117-f19559ccc596?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Nnx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img2"/>
+                                <div class="p-2">
+                                    <strong>496 Likes</strong>
+                                    <p>Road with snake form</p>
+                                </div>
+                    </div>
+                </div>
+                        <div class="row my-4">
+                            <div class="col-6 mx-auto border p-0">
+                                <div class="d-flex p-2">
+                                    <div class="w-100 fs-4">Woman in ruined house</div>
+                                    <div class="align-bottom">03/09</div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1728124190953-b1cac24cedfa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4OXx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img3"/>
+                                        <div class="p-2">
+                                            <strong>368 Likes</strong>
+                                            <p>Artistic photo of a woman</p>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-6 mx-auto border p-0">
+                                <div class="d-flex p-2">
+                                    <div class="w-100 fs-4">Coffee in the van</div>
+                                    <div class="align-bottom">04/09</div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1727206407687-81a7448e7c7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img4"/>
+                                        <div class="p-2">
+                                            <strong>674 Likes</strong>
+                                            <p>Woman take a coffee in the van</p>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-6 mx-auto border p-0">
+                                <div class="d-flex p-2">
+                                    <div class="w-100 fs-4">Volcano!</div>
+                                    <div class="align-bottom">05/09</div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1725808796896-6f2ac628670c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img5"/>
+                                        <div class="p-2">
+                                            <strong>185 Likes</strong>
+                                            <p>Volcano in eruption</p>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-6 mx-auto border p-0">
+                                <div class="d-flex p-2">
+                                    <div class="w-100 fs-4">Colorful bird</div>
+                                    <div class="align-bottom">06/09</div>
+                                </div>
+                                <img src="https://plus.unsplash.com/premium_photo-1724864863815-1469c8b74711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img6"/>
+                                        <div class="p-2">
+                                            <strong>208 Likes</strong>
+                                            <p>A cute colorful bird</p>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-6 mx-auto border p-0">
+                                <div class="d-flex p-2">
+                                    <div class="w-100 fs-4">Fog and trees</div>
+                                    <div class="align-bottom">07/09</div>
+                                </div>
+                                <img src="https://plus.unsplash.com/premium_photo-1726611993654-557bfdde474f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img7"/>
+                                        <div class="p-2">
+                                            <strong>643 Likes</strong>
+                                            <p>Photo of fog and trees</p>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-6 mx-auto border p-0">
+                                <div class="d-flex p-2">
+                                    <div class="w-100 fs-4">Red party!</div>
+                                    <div class="align-bottom">08/09</div>
+                                </div>
+                                <img src="https://plus.unsplash.com/premium_photo-1698505302992-da6c434bd9d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NXx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img8"/>
+                                        <div class="p-2">
+                                            <strong>856 Likes</strong>
+                                            <p>Photo of red party</p>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-6 mx-auto border p-0">
+                                <div class="d-flex p-2">
+                                    <div class="w-100 fs-4">Chinese dragons</div>
+                                    <div class="align-bottom">09/09</div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1727869574099-3ee3c4185e31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt="img9"/>
+                                        <div class="p-2">
+                                            <strong>463 Likes</strong>
+                                            <p>Dragon decoration in china</p>
+                                        </div>
+                            </div>
+                        </div>
+      </div>
+      <!-- Gallery 1 photo end -->
+
+   <!-- bootstrap links -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+   crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+   integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+   crossorigin="anonymous"></script>
+</body>
+</html>
