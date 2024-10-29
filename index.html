@@ -12,29 +12,22 @@
   <!-- nav bar start-->
   <nav class="navbar navbar-light bg-light py-3">
     <div class="container-fluid">
-        <div class="d-flex w-100 justify-content-between">
-            <div>
+        <div class="d-flex w-100 justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
                 <i class="fa-brands fa-instagram fa-xl"></i>
-                <h4 class="d-inline-block fs-5">Instagram</h4>
+                <h4 class="d-inline-block fs-5 ms-2">Instagram</h4>
             </div>
-            <div class="d-flex align-right justify-content-end">
-                <!-- Buttons -->
-                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Create a new post
-                </button>
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-gear"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Accesibility</a></li>
                         <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                     </ul>
                 </div>
@@ -91,23 +84,39 @@
       <!-- grid change end -->
 
       <!-- Gallery 3 photo -->
-      <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <div class="row">
-          <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1728218948405-d749e7d1851e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4N3x8fGVufDB8fHx8fA%3D%3D" alt="img1" class="img-fluid"></div>
-          <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1728322901117-f19559ccc596?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Nnx8fGVufDB8fHx8fA%3D%3D" alt="img2" class="img-fluid"></div>
-          <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1728124190953-b1cac24cedfa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4OXx8fGVufDB8fHx8fA%3D%3D" alt="img3" class="img-fluid"></div>
+    <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+       <div class="row">
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://images.unsplash.com/photo-1728218948405-d749e7d1851e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4N3x8fGVufDB8fHx8fA%3D%3D" alt="img1" class="img-fluid w-100">
         </div>
-        <div class="row">
-            <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1727206407687-81a7448e7c7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="img4" class="img-fluid"></div>
-            <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1725808796896-6f2ac628670c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" alt="img5" class="img-fluid"></div>
-            <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1724864863815-1469c8b74711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="img6" class="img-fluid"></div>
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://plus.unsplash.com/premium_photo-1728322901117-f19559ccc596?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Nnx8fGVufDB8fHx8fA%3D%3D" alt="img2" class="img-fluid w-100">
         </div>
-          <div class="row">
-            <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1726611993654-557bfdde474f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D" alt="img7" class="img-fluid"></div>
-            <div class="col-4 p-1"><img src="https://plus.unsplash.com/premium_photo-1698505302992-da6c434bd9d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NXx8fGVufDB8fHx8fA%3D%3D" alt="img8" class="img-fluid"></div>
-            <div class="col-4 p-1"><img src="https://images.unsplash.com/photo-1727869574099-3ee3c4185e31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" alt="img9" class="img-fluid"></div>
-          </div>
-      </div>
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://images.unsplash.com/photo-1728124190953-b1cac24cedfa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4OXx8fGVufDB8fHx8fA%3D%3D" alt="img3" class="img-fluid w-100">
+        </div>
+       
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://images.unsplash.com/photo-1727206407687-81a7448e7c7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="img4" class="img-fluid w-100">
+        </div>
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://images.unsplash.com/photo-1725808796896-6f2ac628670c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" alt="img5" class="img-fluid w-100">
+        </div>
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://plus.unsplash.com/premium_photo-1724864863815-1469c8b74711?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="img6" class="img-fluid w-100">
+        </div>
+       
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://plus.unsplash.com/premium_photo-1726611993654-557bfdde474f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D" alt="img7" class="img-fluid w-100">
+        </div>
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://plus.unsplash.com/premium_photo-1698505302992-da6c434bd9d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NXx8fGVufDB8fHx8fA%3D%3D" alt="img8" class="img-fluid w-100">
+        </div>
+        <div class="col-6 col-md-4 g-1">
+            <img src="https://images.unsplash.com/photo-1727869574099-3ee3c4185e31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" alt="img9" class="img-fluid w-100">
+        </div>
+       </div>
+    </div>
       <!-- Gallery 3 photo end -->
 
       <!-- Gallery 1 photo -->
@@ -229,7 +238,7 @@
                                         </div>
                             </div>
                         </div>
-      </div>
+                    </div>
       <!-- Gallery 1 photo end -->
 
    <!-- bootstrap links -->
